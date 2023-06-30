@@ -421,6 +421,9 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# Angular
+/FCMABudget/ClientApp/.angular/cache
+
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
