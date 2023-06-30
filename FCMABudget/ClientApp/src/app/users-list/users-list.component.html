@@ -1,0 +1,22 @@
+<h1 id="tableLabel">Users</h1>
+
+<p>Users Listing.</p>
+
+<p *ngIf="!users"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="users">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Create Date</th>
+            <th>Modified Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.userName }}</td>
+            <td>{{ user.createDate }}</td>
+            <td>{{ user.modifiedDate }}</td>
+        </tr>
+    </tbody>
+</table>
